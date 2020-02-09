@@ -16,9 +16,11 @@ body {
 	margin-bottom: 50px;
 	overflow-y: scroll;
 }
+
+/* reformat navbar */
 .navbar {
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: 14px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 17px;
 	margin-bottom: 0;
 }
 #main {
@@ -149,6 +151,9 @@ blockquote small, blockquote.small {
 .header h3 {
 	margin-top: 9px;
 }
+.navbar a {
+	color: gray;
+}
 
 /*------------------------------------
 	navigation and pagination
@@ -161,6 +166,64 @@ blockquote small, blockquote.small {
 }
 .disabled_nav {
 	display: none;
+}
+/* bigger pagination font */
+.pagination-sm>li>a {
+	font-size: 16px;
+}
+/* align navbar items to the left within their individual boxes */
+.nav>li>a {
+	padding: 8px 16px 8px 0px;
+}
+
+/* don't show site name in navbar */
+.navbar-brand {
+    display: none;
+}
+/* modify all navbar text */
+.nav.navbar-nav.pull-right {
+}
+
+/* make navbar links not have a background color on hover and showing hover another way */
+.nav>li>a:hover, .nav>li>a:focus {
+/* 	text-decoration: underline; */
+	background-color: transparent;
+	color: black;
+}
+
+/* set color of navbar expander button for mobile */
+.navbar-toggle {
+	border-color: #ccc;
+}
+.navbar-toggle .icon-bar {
+	background-color: #ccc;
+}
+
+/* make mobile menu fit as many items on one line as it can */
+.navbar-nav>li {
+	float: left;
+}
+
+/* always use margin 0, even on mobile. Makes a margin to left edge of screen for navbar on mobile. */
+.navbar-nav {
+	margin: 0;
+}
+
+/*------------------------------------
+	widgets and fidgets
+-------------------------------------- */
+
+/* remove RSS button */
+.feed.pull-right {
+	display: none;
+}
+
+/* make addthis widget less of an eyesore */
+#at20mc {
+	opacity: 0.85;
+}
+.addthis_toolbox {
+	opacity: 0.3;
 }
 
 /*------------------------------------

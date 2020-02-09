@@ -183,7 +183,7 @@ if (!defined('WEBPATH')) die();
 	}
 ?>
 
-	<nav id="menu" class="navbar navbar-inverse navbar-static-top">
+	<nav id="menu" class="navbar navbar-static-top">
 		<div class="container"> <!-- class="navbar-inner" -->
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -195,7 +195,7 @@ if (!defined('WEBPATH')) die();
 				<a class="navbar-brand" href="<?php echo html_encode(getSiteHomeURL()); ?>" title="<?php echo gettext('Home'); ?>"><?php echo getMainSiteName(); ?></a>
 			</div>
 			<div id="navbar" class="collapse navbar-collapse">
-				<ul class="nav navbar-nav pull-right">
+				<ul class="nav navbar-nav">
 				<?php if ((extensionEnabled('menu_manager')) && (getThemeOption('zpB_custom_menu'))) { ?>
 					<?php printCustomMenu('zpBootstrap', 'list-top', '', 'active'); ?>
 				<?php } else { ?>
