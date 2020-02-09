@@ -96,6 +96,7 @@ function zpB_getRandomImages ($number = 5, $option = 'all', $album_filename = ''
 	$randomImageList = array();
 
 	$i = 1;
+	$safetyChecker = 0;
 	while ($i <= $number) {
 		switch ($option) {
 			case "all" :
@@ -105,12 +106,17 @@ function zpB_getRandomImages ($number = 5, $option = 'all', $album_filename = ''
 				$randomImage = getRandomImagesAlbum($album_filename);
 				break;
 		}
+		
 		if ((is_object($randomImage)) && ($randomImage->exists)) {
-			if (array_search($randomImage, $randomImageList) === false) {
+			$imSize = getSizeFullImage($randomImage);
+			if (($imSize[1] >= 500) && ($imSize[0] >= 500) && (array_search($randomImage, $randomImageList) === false)) {
 				$randomImageList[] = $randomImage;
 				$i++;
 			}
 		} else {
+			break;
+		}
+		if ($safetyChecker++ > 500) {
 			break;
 		}
 	}
