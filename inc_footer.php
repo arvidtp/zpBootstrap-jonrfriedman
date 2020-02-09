@@ -12,7 +12,7 @@
 				}
 				?>
 			</div>
-			<div>
+			<div id="poweredby">
 				<?php printZenphotoLink(); ?> & <a href="https://getbootstrap.com/docs/3.4/" target="_blank" title="Bootstrap">Bootstrap</a>
 			</div>
 		</div>

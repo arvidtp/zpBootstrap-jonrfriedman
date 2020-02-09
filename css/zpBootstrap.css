@@ -32,6 +32,9 @@ body {
 	background-color: #f5f5f5;
 	border-top: 1px solid #ddd;
 }
+#poweredby {
+	display: none;
+}
 .modal-footer {
 	padding: 5px 15px;
 }
