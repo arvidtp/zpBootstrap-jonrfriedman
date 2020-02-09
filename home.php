@@ -52,7 +52,7 @@
 			}
 			?>
 			<div class="<?php echo $col_sd; ?>">
-				<h3><?php echo gettext('Home'); ?></h3>
+				<!-- <h3><?php echo gettext('Home'); ?></h3> -->
 				<div><?php printGalleryDesc(); ?></div>
 			</div>
 			<?php if ($_latest_news_homepage) { ?>
