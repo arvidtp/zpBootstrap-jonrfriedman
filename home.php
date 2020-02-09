@@ -58,7 +58,7 @@
 			<?php if ($_latest_news_homepage) { ?>
 			<div class="col-sm-5">
 				<h3><?php echo gettext_th('Latest news'); ?></h3>
-				<?php printLatestNews( 1, '', true, true, 200, false); ?>
+				<?php printLatestNews( 5, '', false, true, 1000, false); ?>
 			</div>
 			<?php } ?>
 		</div>
