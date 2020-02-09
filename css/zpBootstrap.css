@@ -13,6 +13,8 @@ html {
 	min-height: 100%;
 }
 body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
 	margin-bottom: 50px;
 	overflow-y: scroll;
 }

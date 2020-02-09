@@ -1,5 +1,5 @@
 <?php
-// force UTF-8 Ø
+// force UTF-8 ï¾˜
 if (!defined('WEBPATH')) die();
 ?>
 <!DOCTYPE html>
@@ -57,6 +57,8 @@ if (!defined('WEBPATH')) die();
 		}
 	}
 	?>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700|Source+Sans+Pro:300,700&display=swap" rel="stylesheet">
+
 
 	<link rel="shortcut icon" href="<?php echo $_zp_themeroot; ?>/images/favicon.ico" />
 	<link rel="stylesheet" href="<?php echo $_zp_themeroot; ?>/css/bootstrap.min.css" type="text/css" media="screen" />
