@@ -7,7 +7,7 @@
 			</div><!-- .header -->
 		</div><!-- /.page-header -->
 
-		<div class="breadcrumb">
+		<!-- <div class="breadcrumb">
 			<h4>
 				<?php
 				if ((isset($isHomePage)) && (!$isHomePage)) {
@@ -17,13 +17,8 @@
 				}
 				?>
 			</h4>
-		</div>
+		</div> -->
 
-		<?php if (!getOption('zpB_homepage')) { ?>
-		<div class="page-header top-margin-reset bottom-margin-reset">
-			<p><?php printGalleryDesc(); ?></p>
-		</div>
-		<?php } ?>
 
 		<?php
 		if (!getOption('zpB_use_infinitescroll_gallery')) {
@@ -40,6 +35,12 @@
 			include('inc_print_infinitescroll.php');
 		}
 		?>
+		
+		<?php if (!getOption('zpB_homepage')) { ?>
+		<div class="page-header top-margin-reset bottom-margin-reset">
+			<p><?php printGalleryDesc(); ?></p>
+		</div>
+		<?php } ?>
 
 	</div><!-- /.container main -->
 
