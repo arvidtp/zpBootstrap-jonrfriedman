@@ -9,7 +9,7 @@
 
 		<div class="breadcrumb">
 			<h4>
-				<?php printGalleryIndexURL(' » ', 'Gallery', false); ?><?php printParentBreadcrumb('', ' » ', ' » '); ?><?php printAlbumTitle(); ?>
+				<?php printSiteHomeURL(' » ', 'Home', false); ?><?php printParentBreadcrumb('', ' » ', ' » '); ?><?php printAlbumTitle(); ?>
 			</h4>
 		</div>
 
