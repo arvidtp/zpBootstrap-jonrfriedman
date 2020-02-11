@@ -372,6 +372,26 @@ iframe {
 	border: 0;
 }
 
+/* Contact page fixes: */
+/* fix reCaptcha iframe location */
+div.g-recaptcha div div iframe {
+	position: absolute;
+}
+/* for alignment of top text in contact page */
+.contact-info {
+	margin-left: 202px;
+}
+@media (max-width: 991px) {
+	.contact-info {
+		margin-left: 157px;
+	}
+}
+@media (max-width: 768px) {
+	.contact-info {
+		margin-left: 0px;
+	}
+}
+
 /*------------------------------------
 	search
 -------------------------------------- */
@@ -405,9 +425,10 @@ iframe {
 /*------------------------------------
 	contact, login, password and register
 -------------------------------------- */
-/* contact */
-#mailform strong, #commentform strong, #registration_form strong {
+/* contact form */
+#mailform strong, #commentform strong, #registration_form strong, .required {
 	color: red;
+	font-weight: bold;
 }
 div.buttons {
 	padding: 10px 0;
