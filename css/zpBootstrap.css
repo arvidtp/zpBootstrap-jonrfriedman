@@ -336,70 +336,17 @@ h5.albumName {
 }
 .list-post {
 	padding-bottom: 15px;
-	border-bottom: 1px solid #ddd;
 }
 .list-post:first-of-type {
 	padding-top: 20px;
-	border-top: 1px solid #ddd;
 }
 .post {
 }
 .post-date {
-	float: left;
-	width: 50px;
-	text-align: center;
-	margin: 8px 15px 15px 0;
-	padding: 0 0 5px;
-	border: solid 1px #bebebe;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ecebeb');
-	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ecebeb));
-	background: -moz-linear-gradient(top, #ffffff, #ecebeb);
-	background: linear-gradient(-90deg, #ffffff, #ecebeb);
-		-webkit-border-radius: 5px;
-		-moz-border-radius: 5px;
-	border-radius: 5px;
-		-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .15);
-		-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .15);
-	box-shadow: 0 1px 1px rgba(0, 0, 0, .15);
+	display: none;
 }
-.post-date .month {
-	color: #fff;
-	font: 11px/100% Arial, Helvetica, sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	display: block;
-	padding: 2px 0;
-	width: 50px;
-	position: relative;
-	top: -1px;
-	left: -1px;
-	border: solid 1px #a11216;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eb1c24', endColorstr='#a30c10');
-	background: -webkit-gradient(linear, left top, left bottom, from(#eb1c24), to(#a30c10));
-	background: -moz-linear-gradient(top, #eb1c24, #a30c10);
-	background: linear-gradient(-90deg, #eb1c24, #a30c10);
-		-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .2);
-		-moz-box-shadow: 0 1px 0 rgba(0, 0, 0, .2);
-	box-shadow: 0 1px 0 rgba(0, 0, 0, .2);
-		-webkit-border-top-left-radius: 5px;
-		-webkit-border-top-right-radius: 5px;
-		-moz-border-radius-topleft: 0 5px 0 5px;
-		-moz-border-radius-topleft: 5px;
-		-moz-border-radius-topright: 5px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-}
-.post-date .day {
-	color: #666;
-	padding: 2px 0 0;
-	font: bold 18px/100% Arial, Helvetica, sans-serif;
-	display: block;
-}
-.post-date .year {
-	color: #999;
-	padding: 2px 0 0;
-	font: 10px/100% Arial, Helvetica, sans-serif;
-	display: block;
+h4.post-title {
+	font-size: 20px;
 }
 @media (max-width: 767px) {
 	.extra-content {
