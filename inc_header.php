@@ -31,7 +31,7 @@ if (!defined('WEBPATH')) die();
 		case 'favorites.php':
 			echo gettext('My favorites'); if ($_zp_page > 1) { echo ' [' . $_zp_page . ']'; }; break;
 		case 'gallery.php':
-			echo gettext('Gallery'); if ($_zp_page > 1) { echo ' [' . $_zp_page . ']'; }; break;
+			echo gettext('Artist'); if ($_zp_page > 1) { echo ' [' . $_zp_page . ']'; }; break;
 		case 'image.php':
 			echo getBareAlbumTitle() . ' | ' . getBareImageTitle(); break;
 		case 'news.php':
