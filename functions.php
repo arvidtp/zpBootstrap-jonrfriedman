@@ -29,6 +29,7 @@ if (!OFFSET_PATH) {
 		// set album thumb size and album thumb size for mobile device
 		setOption('zpB_album_thumb_width', 720, false);
 		setOption('zpB_album_thumb_height', 360, false);
+		setOption('zpB_album_thumb_height_square', 720, false);
 
 		setOption('thumb_size', 350, false);
 		setOption('thumb_crop_width', 350, false);
@@ -40,6 +41,7 @@ if (!OFFSET_PATH) {
 		// set album thumb size and album thumb size
 		setOption('zpB_album_thumb_width', 360, false);
 		setOption('zpB_album_thumb_height', 180, false);
+		setOption('zpB_album_thumb_height_square', 360, false);
 		
 		setOption('thumb_size', 220, false);
 		setOption('thumb_crop_width', 220, false);
