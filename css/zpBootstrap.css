@@ -259,6 +259,10 @@ blockquote small, blockquote.small {
 		clear:both;
 	}
 }
+
+h5.albumName {
+	font-size: 18px;
+}
 /* ---- isotope ---- */
 .gutter-sizer {
 	width: 20px;
