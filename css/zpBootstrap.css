@@ -213,6 +213,11 @@ blockquote small, blockquote.small {
 	margin: 0;
 }
 
+/* hide news item name in navbar when on single newsitem page */
+.menu_zenpagenews {
+	display: none;
+}
+
 /*------------------------------------
 	widgets and fidgets
 -------------------------------------- */
