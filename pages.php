@@ -3,7 +3,13 @@
 	<!-- .container main -->
 		<!-- .page-header -->
 			<!-- .header -->
-				<h3><?php printPageTitle(); ?></h3>
+				<h3><?php $codeBlock = getCodeblock(1);
+				if ($codeBlock === NULL) {
+					printPageTitle(); 
+				} else {
+					printCodeblock(1);
+				}
+					?></h3>
 			</div><!-- .header -->
 		</div><!-- /.page-header -->
 
@@ -20,7 +26,6 @@
 			<div class="col-sm-9">
 				<div class="post margin-bottom-double clearfix">
 					<?php printPageContent(); ?>
-					<?php printCodeblock(1); ?>
 				</div><!--/.post -->
 			</div>
 			<div class="col-sm-3">
@@ -34,7 +39,6 @@
 			<div class="col-sm-12">
 				<div class="post margin-bottom-double clearfix">
 					<?php printPageContent(); ?>
-					<?php printCodeblock(1); ?>
 				</div><!--/.post -->
 			</div>
 		</div>
