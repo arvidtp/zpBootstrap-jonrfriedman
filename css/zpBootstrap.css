@@ -556,6 +556,15 @@ div.buttons button {
 	}
 }
 
+/* large captions won't cover (most of) image */
+.fancybox-caption {
+	max-height: 30%;
+	overflow: scroll;
+}
+.fancybox-caption__body {
+	overflow: visible;
+}
+
 /*------------------------------------
 	Infinite scroll
 -------------------------------------- */
