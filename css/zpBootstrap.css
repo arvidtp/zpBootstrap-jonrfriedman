@@ -566,6 +566,10 @@ div.buttons button {
 .fancybox-caption__body {
 	overflow: visible;
 }
+/* don't show bullets for tags in fancybox */
+.fancybox-caption ul {
+	list-style: none;
+}
 
 /*------------------------------------
 	Infinite scroll

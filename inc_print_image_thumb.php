@@ -31,6 +31,9 @@
 						<div class="hidden caption">
 							<h4><?php printBareImageTitle(); ?></h4>
 							<?php echo printImageDesc(); ?>
+							<?php if ((getOption('zpB_show_tags')) && (getTags())) { ?>
+								<?php echo printTags(NULL, NULL, NULL, NULL); ?>
+							<?php } ?>
 						</div>
 					</a>
 					<?php		// audio file
