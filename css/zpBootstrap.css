@@ -164,6 +164,8 @@ blockquote small, blockquote.small {
 -------------------------------------- */
 .breadcrumb h4 {
 	margin: 0;
+	font-size: 16px;
+	line-height: 20px;
 }
 .pagination {
 	margin-top: 0;
